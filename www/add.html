@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Пополняем Фильмотеку на PortnovLaboratory.ru</title>
+		<meta name="description" content="Фильмотека - тестовое задание Зелёной Точки" />
+		<meta name="keywords" content="Новый фильм" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link rel="stylesheet" type="text/css" href="http://portnovlaboratory.ru/green-dot/css/style.css" />
+
+		<link rel="icon" href="http://portnovlaboratory.ru/green-dot/images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="http://portnovlaboratory.ru/green-dot/images/favicon.ico" type="image/x-icon" />
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/news/rss/" />
+		
+		<!-- Подключение jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<h1>Тестовое задание "Зелёная Точка"</h1>
+			</header><!-- .header-->
+
+			<div class="middle">
+				<div class="container">
+					<main class="content">
+						<h2>Форма для пополнения Фильмотеки:</h2>
+						
+						<form id="form_add" action="send.php" method="post">
+							<fieldset>
+								<legend>Добавьте данные нового фильма</legend>
+								<p>
+									<label for="name">Название фильма:
+										<input name="name" type="text" required="">
+									</label>
+									<div class="line_paragraph"></div>
+									<label for="year">Год выхода фильма:
+										<input name="year" type="text" required="">
+									</label>
+									<div class="line_paragraph"></div>
+									<label for="tag">Тэг:
+										<input name="tag" type="text" required="">
+									</label>
+								</p>
+								<div class="clear_div"></div>
+								<button class="submit" type="submit" role="button" aria-disabled="false">Добавить</button>
+							</fieldset>
+						</form>
+						
+					</main><!-- .content -->
+				</div><!-- .container-->
+
+				<aside class="left-menu">
+					<h2>Меню</h2>
+					<ul>
+						<li><a href="http://portnovlaboratory.ru/green-dot/">Вся Фильмотека</a></li>
+						<li class="active"><a href="http://portnovlaboratory.ru/green-dot/add.html">Пополнить коллекцию фильмов</a></li>
+					</ul>
+					<div class="clear_div" style="height: 20px;">&nbsp;</div>
+				</aside><!-- .left-sidebar -->
+			</div><!-- .middle-->
+		</div><!-- .wrapper -->
+
+		<footer class="footer">
+			<div class="footer_text">Также вы всегда можете посмотреть другие мои проекты - <a href="http://portnovlaboratory.ru/web-projects/">portnovlaboratory.ru</a></div>
+		</footer><!-- .footer -->
+	</body>
+</html>

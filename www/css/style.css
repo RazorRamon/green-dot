@@ -1,0 +1,382 @@
+/* Verstal: V V P */
+/* ------ */
+
+/* General styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+* {
+	-moz-box-sizing: border-box; /* Для Firefox */  
+	box-sizing: border-box; /* Ширина блока с полями */
+	margin: 0px;
+}
+
+.clear_div {
+	clear: both;
+	height: 0px;
+}
+
+body {
+	/*font: 12px/18px Arial, sans-serif;*/
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+.header {
+	height: 150px;
+	background: #FFE680;
+}
+
+.header h1 {
+    color: #2127a5;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+	text-align: center;
+	line-height: 150px;
+	vertical-align: middle;
+}
+
+/* ------ */
+/* MIDDLE */
+/* ------ */
+
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+}
+
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.content {
+	padding: 0 0 30px 340px;
+}
+
+.content h2 {
+    color: #2127a5;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+	text-align: left;
+	margin: 20px 0 18px;
+}
+
+.content h3 {
+    color: #777;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+	text-align: left;
+	margin: 20px 0 18px;
+}
+
+/* Table_style */
+
+.content .list_films {
+	width: 100%;
+    border: 1px solid #777;
+	margin: 20px 0 40px;
+}
+
+.content .list_films td {
+    border: 1px solid #777;
+	padding: 10px;
+	color: #999;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+}
+
+.content .list_films td:first-child {
+	width: 35%;
+}
+
+.content .list_films td:nth-child(2) {
+	width: 10%;
+}
+
+.content .list_films td:nth-child(3) {
+	width: 20%;
+}
+
+.content .list_films td:nth-child(4) {
+	width: 25%;
+}
+
+/* FORMA */
+
+#form_add {
+	margin-top: 0px;
+	padding:0px;
+	margin-right: 200px;
+	text-align: right;
+}
+
+#form_add fieldset{
+	display:inline;
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+#form_add legend{
+	display: none;
+}
+
+#form_add label{
+	display:block;
+	color: #212121; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+}
+
+#form_add input {
+	border: 1px solid #d2d0c6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	height:35px;
+	width: 285px;
+	padding:5px;
+	color: #363532; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	font-style:italic;
+	margin-top: 15px;
+}
+
+#form_add input::-webkit-input-placeholder {
+	color: #cbc9b9; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	font-style:italic;
+}
+
+#form_add input:-moz-placeholder {
+	color: #cbc9b9; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	font-style:italic;
+}
+
+#form_add input:-ms-input-placeholder {
+	color: #cbc9b9; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	font-style:italic;
+}
+
+#form_add input.placeholder {
+	color: #cbc9b9; 
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	font-style: italic;
+}
+
+#form_add .line_paragraph{
+	margin: 15px 0px 0px 25px;
+	background: url('http://portnovlaboratory.ru/green-dot/images/line_head2.png') 130px 0px no-repeat;
+	height: 5px;
+}
+
+#form_add .submit {
+	font-family: "Trebuchet MS";
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	-moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	width: 285px;
+	height: 50px;
+	border: 1px solid #9a1d30;
+	display: block;
+	-webkit-box-shadow: #ef8792 0px 1px 0px 0px inset, #555 0px 1px 0px 0px;
+	-moz-box-shadow: #ef8792 0px 1px 0px 0px inset, #555 0px 1px 0px 0px;
+	box-shadow: #ef8792 0px 1px 0px 0px inset, #555 0px 1px 0px 0px;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9484a), color-stop(100%, #9a1d30));
+	background: -webkit-linear-gradient(#c9484a, #9a1d30);
+	background: -moz-linear-gradient(#c9484a, #9a1d30);
+	background: -o-linear-gradient(#c9484a, #9a1d30);
+	background: linear-gradient(#c9484a, #9a1d30);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	margin-left: 155px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+	
+#form_add .submit:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d64a4e), color-stop(100%, #911d30));
+	background: -webkit-linear-gradient(#d64a4e, #911d30);
+	background: -moz-linear-gradient(#d64a4e, #911d30);
+	background: -o-linear-gradient(#d64a4e, #911d30);
+	background: linear-gradient(#d64a4e, #911d30);
+}
+
+/* ------------ */
+/* LEFT SITEBAR */
+/* ------------ */
+
+.left-menu h2 {
+    color: #2127a5;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+}
+
+.left-sidebar, .left-menu {
+	float: left;
+	width: 310px;
+	margin-left: -100%;
+	position: relative;
+	background: #B5E3FF;
+}
+
+.left-menu ul {
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 15px 10px 20px 5px;
+}
+
+.left-menu ul li {
+	display: block;
+	float: left;
+	position: relative;
+	padding: 0px 0px 0px 30px;
+	width: 300px;
+	margin: 5px 0 7px;
+	text-align: left;
+}
+
+.left-menu ul li a {
+	display: block;
+	color: #833d12;
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.left-menu ul li:hover a {
+	color: #dd661e;
+}
+
+.left-menu ul li.active {
+	color: #dd661e;
+}
+
+.left-menu ul li.active a {
+	color: #dd661e;
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+.footer {
+	width: 1000px;
+	margin: -100px auto 0;
+	height: 100px;
+	background: #BFF08E;
+	position: relative;
+}
+
+.footer .footer_text {
+    color: #2127a5;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+}
+
+.footer .footer_text a {
+    color: #12ba1b;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+}
